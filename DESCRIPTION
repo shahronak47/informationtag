@@ -1,0 +1,11 @@
+Package: infotag
+Title: Allows to add @info tag to roxygen2 scripts
+Version: 0.0.1
+Authors@R: person("Ronak", "Shah", , "shahronak47@yahoo.in", role = c("aut", "cre"))
+Description: This package enables to add custom tags in roxygen2 skeleton. Using this package you may add @info tag to add any additional information.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: roxygen2
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
