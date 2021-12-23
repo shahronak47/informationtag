@@ -1,7 +1,7 @@
-#' Roclet: check presence of `@info` in documentation for exported functions
+#' Roclet: check presence of `@information` in documentation for exported functions
 #'
 #' @family roclets
-#' @description This roclet allows you to add @info tag in roxygen2
+#' @description This roclet allows you to add @information tag in roxygen2
 #'
 #' @return
 #' A roclet to be used e.g. with [roxygen2::roxygenise()]
@@ -10,8 +10,8 @@
 #'
 #' @export
 
-info_roclet <- function() {
-  roxygen2::roclet("info")
+information_roclet <- function() {
+  roxygen2::roclet("information")
 }
 
 #' @title Roclet Process
@@ -22,7 +22,7 @@ info_roclet <- function() {
 #' @param env environment
 #' @param base_path path
 #' @export
-roclet_process.roclet_info <- function(x, blocks, env, base_path) {
+roclet_process.roclet_information <- function(x, blocks, env, base_path) {
   x
 }
 
@@ -34,14 +34,14 @@ roclet_process.roclet_info <- function(x, blocks, env, base_path) {
 #' @param base_path path
 #' @param ... additional arguments
 #' @export
-roclet_output.roclet_info <- function(x, results, base_path, ...) {
+roclet_output.roclet_information <- function(x, results, base_path, ...) {
   x
 }
 #' @title  Roclet parse
 #' @importFrom roxygen2 roxy_tag_parse
 #' @param x input
 #' @export
-roxy_tag_parse.roxy_tag_info <- function(x) {
+roxy_tag_parse.roxy_tag_information <- function(x) {
   x$val <- x$raw
   x
 }
